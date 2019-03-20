@@ -6,4 +6,4 @@ latest_exchange.db.dir
 tests.py
 /build
 /dist
-/pyexchange.egg-info
+/pyUSDforex.egg-info

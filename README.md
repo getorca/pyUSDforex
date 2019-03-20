@@ -3,8 +3,13 @@
 ## Project Description
 PyUSDforex is a python package to convert foreign currencies into US dollars. It uses the free API key from openexchangerates.org to get over 200 currencies. PyUSDforex allows you to perform as many currency conversions as you wish by caching the hourly exchange rates from openexchange.org in a python shelve.
 
- ## Usage
- ```python
+## Installation
+install from https://pypi.org/project/pyUSDforex/
+
+pip install pyUSDforex
+
+## Usage
+```python
 import pyUSDforex
 
 pyUSDforex.convert(100, 'EUR', 'Your APP_ID')
