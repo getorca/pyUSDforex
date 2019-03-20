@@ -11,7 +11,7 @@ setuptools.setup(
     description="Converts foreign currencies to USD by getting and caching hourly exchanges rates from openexchangerates.org",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/getorca/pyexchange",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
