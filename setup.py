@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pyexchange",
-    version="0.0.1",
+    name="pyUSDforex",
+    version="0.1.0",
     author="Lawrence Stewart",
     author_email="lawrence@lawrencestewart.ca",
-    description="Converts foreign currencies to USD by getting and caching hourly exchanges rates from openexchangerates.org",
+    description="Converts foreign fiat currencies to USD by getting and caching hourly exchanges rates from openexchangerates.org",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/getorca/pyexchange",
+    url="https://github.com/getorca/pyUSDforex",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
