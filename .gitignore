@@ -1,9 +1,9 @@
-/__pycache__
-/.idea
+**/__pycache__
+**/.idea
 latest_exchange.db.bak
 latest_exchange.db.dat
 latest_exchange.db.dir
 tests.py
 /build
 /dist
-/pyUSDforex.egg-info
+**/pyUSDforex.egg-info

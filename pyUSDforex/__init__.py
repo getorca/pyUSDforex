@@ -1,11 +1,17 @@
 import requests
 import json
+from threading import Lock
 import shelve
 import time
 from decimal import *
 
 
 def convert(amount, to_currency, app_id):
+
+    mutex = Lock()
+
+    # lock the thread
+    mutex.acquire()
 
     # open shelve
     exchange_shelve = shelve.open('latest_exchange.db')
@@ -25,6 +31,9 @@ def convert(amount, to_currency, app_id):
     # close the shelve
     exchange_shelve.close()
 
+    # unlock the thread
+    mutex.release()
+    
     # solve for the result
     result = (1 / Decimal(rates[to_currency]) * Decimal(amount))
 
