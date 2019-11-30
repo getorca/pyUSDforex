@@ -1,15 +1,19 @@
+import pathlib2
 import setuptools
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+# The directory containing this file
+HERE = pathlib2.Path(__file__).parent
+
+# The text of the README file
+README = (HERE / "README.md").read_text()
 
 setuptools.setup(
     name="pyUSDforex",
-    version="0.1.0",
+    version="0.1.1",
     author="Lawrence Stewart",
     author_email="lawrence@lawrencestewart.ca",
     description="Converts foreign fiat currencies to USD by getting and caching hourly exchanges rates from openexchangerates.org",
-    long_description=long_description,
+    long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/getorca/pyUSDforex",
     packages=setuptools.find_packages(),
