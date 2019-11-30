@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text()
 
 setuptools.setup(
     name="pyUSDforex",
-    version="0.1.1",
+    version="0.1.2",
     author="Lawrence Stewart",
     author_email="lawrence@lawrencestewart.ca",
     description="Converts foreign fiat currencies to USD by getting and caching hourly exchanges rates from openexchangerates.org",

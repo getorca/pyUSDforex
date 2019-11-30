@@ -33,10 +33,13 @@ def convert(amount, to_currency, app_id):
 
     # unlock the thread
     mutex.release()
-    
-    # solve for the result
-    result = (1 / Decimal(rates[to_currency]) * Decimal(amount))
 
+    # solve for the result
+    try:
+        result = (1 / Decimal(rates[to_currency]) * Decimal(amount))
+    except KeyError:
+        error_msg = 'The exchange rate for '+to_currency+' cannot be found.'
+        raise Exception(error_msg)
     return result
 
 
